@@ -6,10 +6,10 @@ from flask_jwt_extended import JWTManager
 
 app = Flask(__name__)
 app.config.from_object(Config)
-app.config.from_object(Config)
 jwt = JWTManager(app)
 
 import routes
+from database import db
 
 CORS(app)
 
